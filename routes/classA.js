@@ -1,6 +1,5 @@
-const { default: axios } = require("axios");
+const axios = require("axios");
 const { ROUTE_MAP } = require("../constants/routemap");
-
 const router = require("express").Router();
 
 router.get("/:servicename/all/location", async (req, res) => {
