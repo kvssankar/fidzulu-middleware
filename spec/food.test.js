@@ -1,7 +1,7 @@
 const axios = require("axios");
 const nock = require("nock");
 
-const base_url = 'http://localhost:3021';
+const base_url = 'http://localhost:3032/foodService/all';
 const post_url = "/food/add";
 
 describe("Food Mid End Tests", () => {

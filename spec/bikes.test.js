@@ -1,6 +1,6 @@
 const axios = require("axios");
 const nock = require("nock");
-const base_url = 'http://localhost:3001';
+const base_url = 'http://localhost:3031/bikes/all';
 
 describe("Bikes Mid End Tests", () => {
     beforeEach(() => {

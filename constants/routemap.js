@@ -1,7 +1,13 @@
 const ROUTE_MAP = {
-  bikes: "http://localhost:3031/bikes",
-  food: "http://localhost:3032/food",
-  toys: "http://localhost:3033/toys",
+  bikes: "http://localhost:3031/bikes/all",
+  foodService: "http://localhost:3032/foodService/all",
+  toys: "http://localhost:3033/toys/all"
 };
 
-module.exports = { ROUTE_MAP };
+const ROUTE_MAP_TEAMS = {
+  bikes: "http://localhost:3031/bikes/team",
+  foodService: "http://localhost:3032/foodService/team",
+  toys: "http://localhost:3033/toys/team"
+};
+
+module.exports = { ROUTE_MAP, ROUTE_MAP_TEAMS };
