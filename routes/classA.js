@@ -12,4 +12,6 @@ router.get("/:servicename/all/location", async (req, res) => {
   }
 });
 
+
+
 module.exports = router;
