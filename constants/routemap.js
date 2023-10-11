@@ -1,5 +1,7 @@
-export const ROUTE_MAP = {
-  BIKE_SERVICE: "http://localhost:3001",
-  FOOD_SERVICE: "http://localhost:3002",
-  TOYS_SERVICE: "http://localhost:3003",
+const ROUTE_MAP = {
+  bikes: "http://localhost:3031/bikes",
+  food: "http://localhost:3032/food",
+  toys: "http://localhost:3033/toys",
 };
+
+module.exports = { ROUTE_MAP };
