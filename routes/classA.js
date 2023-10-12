@@ -6,54 +6,33 @@ router.get("/all/team", async (req, res) => {
   res.json([
     {
       name: "Toy Service team",
-      members: {
-        member1: "Kinar",
-        member2: "Vishakha",
-        member3: "Jitin",
-        member4: "krishna",
-        member5: "Saundarya",
-        member6: "Riddhi",
-      },
+      members: ["Kinar", "Vishakha", "Jitin", "krishna", "Saundarya", "Riddhi"],
     },
     {
       name: "Food Service team",
-      members: {
-        member1: "Kinar",
-        member2: "Vishakha",
-        member3: "Jitin",
-        member4: "krishna",
-        member5: "Saundarya",
-        member6: "Riddhi",
-      },
+      members: ["Kinar", "Vishakha", "Jitin", "krishna", "Saundarya", "Riddhi"],
     },
     {
       name: "Toy Service team",
-      members: {
-        member1: "Kinar",
-        member2: "Vishakha",
-        member3: "Jitin",
-        member4: "krishna",
-        member5: "Saundarya",
-        member6: "Riddhi",
-      },
+      members: ["Kinar", "Vishakha", "Jitin", "krishna", "Saundarya", "Riddhi"],
     },
     {
       name: "Middle Tier Class A",
-      member: {
-        member1: "Kvs Sankar Kumar",
-        member2: "Srihari C",
-        member3: "Isha Singh",
-        member4: "Pranjal Surana",
-      },
+      members: [
+        "Kvs Sankar Kumar",
+        "Srihari C",
+        "Isha Singh",
+        "Pranjal Surana",
+      ],
     },
     {
       name: "Middle Tier Class B",
-      member: {
-        member1: "Harishankar V",
-        member2: "Sai Amith T",
-        member3: "Swaroop S Jadhav",
-        member4: "Srilakshman S",
-      },
+      members: [
+        "Harishankar V",
+        "Sai Amith T",
+        "Swaoop S Jadhav",
+        "Srilakshman S",
+      ],
     },
   ]);
 });
