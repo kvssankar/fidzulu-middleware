@@ -13,7 +13,7 @@ router.get("/all/team", async (req, res) => {
       members: ["Kinar", "Vishakha", "Jitin", "krishna", "Saundarya", "Riddhi"],
     },
     {
-      name: "Toy Service team",
+      name: "Bike Service team",
       members: ["Kinar", "Vishakha", "Jitin", "krishna", "Saundarya", "Riddhi"],
     },
     {
