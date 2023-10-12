@@ -3,38 +3,19 @@ const { ROUTE_MAP, ROUTE_MAP_TEAMS } = require("../constants/routemap");
 const router = require("express").Router();
 
 router.get("/all/team", async (req, res) => {
-  res.json([
-    {
-      name: "Toy Service team",
-      members: ["Kinar", "Vishakha", "Jitin", "krishna", "Saundarya", "Riddhi"],
-    },
-    {
-      name: "Food Service team",
-      members: ["Kinar", "Vishakha", "Jitin", "krishna", "Saundarya", "Riddhi"],
-    },
-    {
-      name: "Bike Service team",
-      members: ["Kinar", "Vishakha", "Jitin", "krishna", "Saundarya", "Riddhi"],
-    },
-    {
-      name: "Middle Tier Class A",
-      members: [
-        "Kvs Sankar Kumar",
-        "Srihari C",
-        "Isha Singh",
-        "Pranjal Surana",
-      ],
-    },
-    {
-      name: "Middle Tier Class B",
-      members: [
-        "Harishankar V",
-        "Sai Amith T",
-        "Swaoop S Jadhav",
-        "Srilakshman S",
-      ],
-    },
-  ]);
+  const data = [];
+
+  try {
+    const response = await axios.all([bikesTeam, foodServiceTeam, toysTeam]);
+    response.forEach((element) => {
+      data.push(...element.data);
+    });
+    res.json(data);
+  } catch (err) {
+    const status = err?.response?.status || 500;
+    const data = err?.response?.data || { message: "Internal Server Error" };
+    res.status(status).json(data);
+  }
 });
 
 router.get("/:servicename/all/:location", async (req, res) => {
