@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const app = express();
 
-// Define your API routes here
+// API routes
 
 // Defined routes for Bikes
 
@@ -74,8 +74,7 @@ app.get('/toys/Durham', (req, res) => {
 });
 
 
-
-// Other route handlers
+// Other Route Handlers
 
 // For Bikes
 
